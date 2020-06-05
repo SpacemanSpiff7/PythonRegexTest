@@ -28,7 +28,7 @@ if __name__ == "__main__":
     try:
         result = accepted_operations[args.op](args.regex_string, searchstring)
         if len(searchstring) > 10:
-            strpreview = searchstring[:10]
+            strpreview = searchstring[:10] + '...({} chars not shown)'.format(len(searchstring) - 10)
         else:
             strpreview = searchstring
         print('Results for re.{}( \'{}\' , \'{}\' )'.format(args.op, args.regex_string, strpreview))
