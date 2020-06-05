@@ -5,6 +5,8 @@ Install:
 
 `git clone https://github.com/SpacemanSpiff7/PythonRegexTest`
 
+Help menu
+```
 usage: Regex Tester:
 
 	$ python pre.py -o match -r <REGEX> -s <SOME STRING> [-f <OR SOME FILE>]
@@ -18,3 +20,4 @@ optional arguments:
   -o OP            Regex operation from python 're' module to use (default is
                    'split'). Options are: match, split, sub, findall, or
                    fullmatch
+```
